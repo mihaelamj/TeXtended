@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21D406B58D7F620C41E61B9D /* libPods-DBLPTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4BCAE70CE0C76C5E119FF7 /* libPods-DBLPTool.a */; };
+		A92FDCAA29B13D5C00C3D118 /* TMTHelperCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220A6F11991123200A28CB7 /* TMTHelperCollection.framework */; };
+		A92FDCAB29B13D5C00C3D118 /* TMTHelperCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D220A6F11991123200A28CB7 /* TMTHelperCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92FDCAE29B13D6800C3D118 /* TMTBibTexTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0714A1BDCFEB100018A78 /* TMTBibTexTools.framework */; };
+		A92FDCAF29B13D6800C3D118 /* TMTBibTexTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0714A1BDCFEB100018A78 /* TMTBibTexTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92FDCBA29B142E100C3D118 /* cycloid.tex in Resources */ = {isa = PBXBuildFile; fileRef = A92FDCB929B142E100C3D118 /* cycloid.tex */; };
 		D2E071541BDCFEB100018A78 /* TMTBibTexTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0714A1BDCFEB100018A78 /* TMTBibTexTools.framework */; };
 		D2E071591BDCFEB100018A78 /* TMTBibTexToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E071581BDCFEB100018A78 /* TMTBibTexToolsTests.m */; };
 		D2E071741BDCFF2400018A78 /* DBLPCallbackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E071631BDCFF2400018A78 /* DBLPCallbackHandler.h */; };
@@ -35,6 +39,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A92FDCA429B13A0E00C3D118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D217A41A176B442C002DB084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2E071491BDCFEB100018A78;
+			remoteInfo = TMTBibTexTools;
+		};
+		A92FDCB029B13D6800C3D118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D217A41A176B442C002DB084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2E071491BDCFEB100018A78;
+			remoteInfo = TMTBibTexTools;
+		};
 		D2E071551BDCFEB100018A78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D217A41A176B442C002DB084 /* Project object */;
@@ -44,18 +62,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A92FDCAD29B13D5C00C3D118 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A92FDCAF29B13D6800C3D118 /* TMTBibTexTools.framework in Embed Frameworks */,
+				A92FDCAB29B13D5C00C3D118 /* TMTHelperCollection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B55066A07D914A33B9F5D22B /* libPods-TMTBibTexTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTBibTexTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA4BCAE70CE0C76C5E119FF7 /* libPods-DBLPTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBLPTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92FDCB929B142E100C3D118 /* cycloid.tex */ = {isa = PBXFileReference; lastKnownFileType = text; path = cycloid.tex; sourceTree = "<group>"; };
 		D217A425176B442C002DB084 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D217A428176B442C002DB084 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D217A429176B442C002DB084 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D217A42A176B442C002DB084 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D220A6F11991123200A28CB7 /* TMTHelperCollection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TMTHelperCollection.framework; path = ../DerivedData/TMTProject/Build/Products/Debug/TMTHelperCollection.framework; sourceTree = "<group>"; };
-		D23BC4F21861E79700E9A507 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D2E0713F1BDCF38C00018A78 /* TMTHelperCollection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TMTHelperCollection.framework; path = ../TMTHelperCollection/build/Debug/TMTHelperCollection.framework; sourceTree = "<group>"; };
-		D2E071411BDCF3B700018A78 /* libCocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaLumberjack.a; path = ../Build/Products/Debug/libCocoaLumberjack.a; sourceTree = "<group>"; };
-		D2E071431BDCFBB000018A78 /* libTMTBibTexTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTMTBibTexTools.a; path = ../Build/Products/Debug/libTMTBibTexTools.a; sourceTree = "<group>"; };
 		D2E0714A1BDCFEB100018A78 /* TMTBibTexTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMTBibTexTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E0714C1BDCFEB100018A78 /* TMTBibTexTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTBibTexTools.h; sourceTree = "<group>"; };
 		D2E0714E1BDCFEB100018A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +120,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A92FDCAC29B13D5C00C3D118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92FDCAE29B13D6800C3D118 /* TMTBibTexTools.framework in Frameworks */,
+				A92FDCAA29B13D5C00C3D118 /* TMTHelperCollection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2E071461BDCFEB100018A78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,14 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2E071541BDCFEB100018A78 /* TMTBibTexTools.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2E071BE1BDD005800018A78 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21D406B58D7F620C41E61B9D /* libPods-DBLPTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,15 +171,9 @@
 		D217A424176B442C002DB084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2E071431BDCFBB000018A78 /* libTMTBibTexTools.a */,
-				D2E071411BDCF3B700018A78 /* libCocoaLumberjack.a */,
-				D2E0713F1BDCF38C00018A78 /* TMTHelperCollection.framework */,
 				D220A6F11991123200A28CB7 /* TMTHelperCollection.framework */,
 				D217A425176B442C002DB084 /* Cocoa.framework */,
-				D23BC4F21861E79700E9A507 /* XCTest.framework */,
 				D217A427176B442C002DB084 /* Other Frameworks */,
-				B55066A07D914A33B9F5D22B /* libPods-TMTBibTexTools.a */,
-				BA4BCAE70CE0C76C5E119FF7 /* libPods-DBLPTool.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,6 +210,7 @@
 			children = (
 				D2E071581BDCFEB100018A78 /* TMTBibTexToolsTests.m */,
 				D2E0715A1BDCFEB100018A78 /* Info.plist */,
+				A92FDCB929B142E100C3D118 /* cycloid.tex */,
 			);
 			path = TMTBibTexToolsTests;
 			sourceTree = "<group>";
@@ -301,16 +325,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E071CF1BDD005800018A78 /* Build configuration list for PBXNativeTarget "DBLPTool" */;
 			buildPhases = (
-				9CCEBF42130AA71D214EB47E /* Check Pods Manifest.lock */,
 				D2E071BD1BDD005800018A78 /* Sources */,
-				D2E071BE1BDD005800018A78 /* Frameworks */,
 				D2E071BF1BDD005800018A78 /* Resources */,
-				ED0FAC4991B3A0FC705CF9AD /* Embed Pods Frameworks */,
-				A47DC06CF6FD7867D2D5C0C3 /* Copy Pods Resources */,
+				A92FDCAC29B13D5C00C3D118 /* Frameworks */,
+				A92FDCAD29B13D5C00C3D118 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A92FDCA529B13A0E00C3D118 /* PBXTargetDependency */,
+				A92FDCB129B13D6800C3D118 /* PBXTargetDependency */,
 			);
 			name = DBLPTool;
 			productName = DBLPTool;
@@ -373,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92FDCBA29B142E100C3D118 /* cycloid.tex in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,54 +412,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9CCEBF42130AA71D214EB47E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A47DC06CF6FD7867D2D5C0C3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-DBLPTool/Pods-DBLPTool-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED0FAC4991B3A0FC705CF9AD /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-DBLPTool/Pods-DBLPTool-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2E071451BDCFEB100018A78 /* Sources */ = {
@@ -471,6 +448,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A92FDCA529B13A0E00C3D118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2E071491BDCFEB100018A78 /* TMTBibTexTools */;
+			targetProxy = A92FDCA429B13A0E00C3D118 /* PBXContainerItemProxy */;
+		};
+		A92FDCB129B13D6800C3D118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2E071491BDCFEB100018A78 /* TMTBibTexTools */;
+			targetProxy = A92FDCB029B13D6800C3D118 /* PBXContainerItemProxy */;
+		};
 		D2E071561BDCFEB100018A78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2E071491BDCFEB100018A78 /* TMTBibTexTools */;
@@ -579,7 +566,7 @@
 				INFOPLIST_FILE = TMTBibTexTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.tobiasmende.TMTBibTexTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,7 +606,7 @@
 				INFOPLIST_FILE = TMTBibTexTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.tobiasmende.TMTBibTexTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,7 +639,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = TMTBibTexToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.tobiasmende.TMTBibTexToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -682,7 +669,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = TMTBibTexToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.tobiasmende.TMTBibTexToolsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -713,7 +700,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = DBLPTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.tobiasmende.DBLPTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,7 +731,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = DBLPTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.tobiasmende.DBLPTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

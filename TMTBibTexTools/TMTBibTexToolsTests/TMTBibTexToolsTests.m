@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TMTBibTexTools.h"
+#import "TMTBibTexParser.h"
+#import "TMTBibTexEntry.h"
 
 @interface TMTBibTexToolsTests : XCTestCase
 
@@ -24,9 +27,45 @@
     [super tearDown];
 }
 
+- (NSString *)loadFileContentWithPath:(NSString *)path
+{
+    NSError *error;
+    NSStringEncoding encoding;
+    NSString *content = [NSString stringWithContentsOfFile:path usedEncoding:&encoding error:&error];
+
+    if (error) {
+        return nil;
+    } else {
+//        self.fileEncoding = [NSNumber numberWithUnsignedLong:encoding];
+        return content;
+    }
+}
+
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    NSString *pathOld = [[NSBundle mainBundle] pathForResource:@"cycloid" ofType:@"tex"];
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"cycloid" ofType:@"tex"];
+    
+
+    NSString *filePath1 = [[[NSBundle bundleForClass:[self class]] resourcePath] stringByAppendingPathComponent:@"cycloid.tex"];
+    NSString *filePath2 = [[NSBundle bundleForClass:[self class]] pathForResource:@"cycloid" ofType:@"tex"];
+    
+    
+    NSString *content = [self loadFileContentWithPath:filePath2];
+    if (!content) { return; }
+    
+    TMTBibTexParser *parser = [TMTBibTexParser new];
+    NSMutableArray *entries = [parser parseBibTexIn:content];
+    
+    for (TMTBibTexEntry *entry in entries) {
+        NSLog(@"key = %@", entry.key);
+        NSLog(@"type = %@", entry.type);
+        NSLog(@"author = %@", entry.author);
+        NSLog(@"title = %@", entry.title);
+        NSLog(@"bibtex = %@", entry.bibtex);
+        NSLog(@"xml = %@", entry.xml);
+    }
+
 }
 
 - (void)testPerformanceExample {

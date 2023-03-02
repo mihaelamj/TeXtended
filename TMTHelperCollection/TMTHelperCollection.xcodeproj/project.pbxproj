@@ -55,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92FDCA629B13CBD00C3D118 /* TMTBibTexTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTBibTexTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E8AD319642A6F004ADAA2 /* TMTTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTTableViewDelegate.h; sourceTree = "<group>"; };
 		D22646C81962DD25007B6489 /* NSSet+TMTSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+TMTSerialization.h"; sourceTree = "<group>"; };
 		D22646C91962DD25007B6489 /* NSSet+TMTSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+TMTSerialization.m"; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		D295821719166B5F00C1B9E0 /* TMTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTTextField.m; sourceTree = "<group>"; };
 		D2F3885319F7C89200B4357C /* TMTBorderedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTBorderedScrollView.h; sourceTree = "<group>"; };
 		D2F3885419F7C89200B4357C /* TMTBorderedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTBorderedScrollView.m; sourceTree = "<group>"; };
-		E1532F53789A4EC497F2FBC3 /* libPods-TMTHelperCollection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTHelperCollection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +154,9 @@
 		D22DC1BB1863784800997ADB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A92FDCA629B13CBD00C3D118 /* TMTBibTexTools.framework */,
 				D22DC1BC1863784800997ADB /* Cocoa.framework */,
 				D22DC1BE1863784800997ADB /* Other Frameworks */,
-				E1532F53789A4EC497F2FBC3 /* libPods-TMTHelperCollection.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -553,7 +553,7 @@
 				GCC_PREFIX_HEADER = "TMTHelperCollection/TMTHelperCollection-Prefix.pch";
 				INFOPLIST_FILE = "TMTHelperCollection/TMTHelperCollection-Info.plist";
 				INSTALL_PATH = "@rpath";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -571,7 +571,7 @@
 				GCC_PREFIX_HEADER = "TMTHelperCollection/TMTHelperCollection-Prefix.pch";
 				INFOPLIST_FILE = "TMTHelperCollection/TMTHelperCollection-Info.plist";
 				INSTALL_PATH = "@rpath";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};

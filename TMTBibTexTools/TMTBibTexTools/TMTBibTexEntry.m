@@ -7,7 +7,7 @@
 //
 
 #import "TMTBibTexEntry.h"
-#import "DBLPConfiguration.h"
+#import <TMTBibTexTools/DBLPConfiguration.h>
 #import <TMTHelperCollection/TMTLog.h>
 
 //LOGGING_DEFAULT

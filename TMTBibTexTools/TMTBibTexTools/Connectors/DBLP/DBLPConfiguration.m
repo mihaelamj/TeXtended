@@ -7,7 +7,7 @@
 //
 
 #import "DBLPConfiguration.h"
-#import <TMTHelperCollection/TMTLog.h>
+//#import <TMTHelperCollection/TMTLog.h>
 
 //LOGGING_DEFAULT
 

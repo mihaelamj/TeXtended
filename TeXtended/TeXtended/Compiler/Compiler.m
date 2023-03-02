@@ -15,7 +15,7 @@
 
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 @interface Compiler ()
 
@@ -35,7 +35,7 @@ LOGGING_DEFAULT_DYNAMIC
 @implementation Compiler
 
 + (void)initialize {
-    LOGGING_LOAD
+//    LOGGING_LOAD
 }
 
 - (id)initWithCompileProcessHandler:(id <CompileProcessHandler>)controller {

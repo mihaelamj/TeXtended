@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65454CD2C8E1440BBEF1BA59 /* libPods-TMTLatexTableExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1417735F05C349A188645182 /* libPods-TMTLatexTableExample.a */; };
-		7AF0F2656AA44ACA85FF1ED2 /* libPods-TMTLatexTableFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 006422AA66F44BA4BC0FF791 /* libPods-TMTLatexTableFramework.a */; };
+		A92FDCB329B13ECD00C3D118 /* TMTBibTexTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCB229B13ECD00C3D118 /* TMTBibTexTools.framework */; };
+		A92FDCB429B13ECD00C3D118 /* TMTBibTexTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCB229B13ECD00C3D118 /* TMTBibTexTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92FDCB729B13ED100C3D118 /* TMTHelperCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCB629B13ED100C3D118 /* TMTHelperCollection.framework */; };
+		A92FDCB829B13ED100C3D118 /* TMTHelperCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCB629B13ED100C3D118 /* TMTHelperCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D260F262198EBDFA00EDAA3A /* TMTLatexTableRowView.h in Headers */ = {isa = PBXBuildFile; fileRef = D260F260198EBDFA00EDAA3A /* TMTLatexTableRowView.h */; };
 		D260F263198EBDFA00EDAA3A /* TMTLatexTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F261198EBDFA00EDAA3A /* TMTLatexTableRowView.m */; };
 		D260F272198EC80F00EDAA3A /* TMTLineNumberCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = D260F270198EC80F00EDAA3A /* TMTLineNumberCellView.h */; };
@@ -69,11 +71,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A92FDCB529B13ECD00C3D118 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A92FDCB829B13ED100C3D118 /* TMTHelperCollection.framework in Embed Frameworks */,
+				A92FDCB429B13ECD00C3D118 /* TMTBibTexTools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		006422AA66F44BA4BC0FF791 /* libPods-TMTLatexTableFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTLatexTableFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1417735F05C349A188645182 /* libPods-TMTLatexTableExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTLatexTableExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D11158E9CE2989102CD81D7 /* Pods-TMTLatexTableFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTLatexTableFramework.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTLatexTableFramework/Pods-TMTLatexTableFramework.release.xcconfig"; sourceTree = "<group>"; };
-		BE2C30D18D533BCAAFCCA5D6 /* Pods-TMTLatexTableExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTLatexTableExample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A92FDCB229B13ECD00C3D118 /* TMTBibTexTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTBibTexTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92FDCB629B13ED100C3D118 /* TMTHelperCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTHelperCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D260F260198EBDFA00EDAA3A /* TMTLatexTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTLatexTableRowView.h; sourceTree = "<group>"; };
 		D260F261198EBDFA00EDAA3A /* TMTLatexTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableRowView.m; sourceTree = "<group>"; };
 		D260F270198EC80F00EDAA3A /* TMTLineNumberCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTLineNumberCellView.h; sourceTree = "<group>"; };
@@ -118,8 +135,6 @@
 		D2D8672E198E7C48006C0565 /* TMTLatexTableExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableExampleTests.m; sourceTree = "<group>"; };
 		D2D8673D198E80B9006C0565 /* TMTLatexTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTLatexTableCellView.h; sourceTree = "<group>"; };
 		D2D8673E198E80B9006C0565 /* TMTLatexTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableCellView.m; sourceTree = "<group>"; };
-		D3AAEB02DD0CCD7234F2AB2A /* Pods-TMTLatexTableFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTLatexTableFramework.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTLatexTableFramework/Pods-TMTLatexTableFramework.debug.xcconfig"; sourceTree = "<group>"; };
-		F8B4D178FAAE74C16D2F0E10 /* Pods-TMTLatexTableExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTLatexTableExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample.release.xcconfig"; sourceTree = "<group>"; };
 		FD963E6B2AED41AD8E24FB72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,8 +143,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92FDCB329B13ECD00C3D118 /* TMTBibTexTools.framework in Frameworks */,
 				D2D866C5198E7BB3006C0565 /* Cocoa.framework in Frameworks */,
-				7AF0F2656AA44ACA85FF1ED2 /* libPods-TMTLatexTableFramework.a in Frameworks */,
+				A92FDCB729B13ED100C3D118 /* TMTHelperCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D8670A198E7C48006C0565 /* Cocoa.framework in Frameworks */,
-				65454CD2C8E1440BBEF1BA59 /* libPods-TMTLatexTableExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,17 +179,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		56BECF9E266763ED2B99F9A9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BE2C30D18D533BCAAFCCA5D6 /* Pods-TMTLatexTableExample.debug.xcconfig */,
-				F8B4D178FAAE74C16D2F0E10 /* Pods-TMTLatexTableExample.release.xcconfig */,
-				D3AAEB02DD0CCD7234F2AB2A /* Pods-TMTLatexTableFramework.debug.xcconfig */,
-				2D11158E9CE2989102CD81D7 /* Pods-TMTLatexTableFramework.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D2D866B7198E7BB3006C0565 = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +188,6 @@
 				D2D86728198E7C48006C0565 /* TMTLatexTableExampleTests */,
 				D2D866C3198E7BB3006C0565 /* Frameworks */,
 				D2D866C2198E7BB3006C0565 /* Products */,
-				56BECF9E266763ED2B99F9A9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +205,8 @@
 		D2D866C3198E7BB3006C0565 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A92FDCB629B13ED100C3D118 /* TMTHelperCollection.framework */,
+				A92FDCB229B13ECD00C3D118 /* TMTBibTexTools.framework */,
 				D2D866C4198E7BB3006C0565 /* Cocoa.framework */,
 				D2D866D9198E7BB3006C0565 /* XCTest.framework */,
 				D2D866C6198E7BB3006C0565 /* Other Frameworks */,
@@ -373,12 +378,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D866E9198E7BB3006C0565 /* Build configuration list for PBXNativeTarget "TMTLatexTableFramework" */;
 			buildPhases = (
-				04FB2258B9094171AFF40724 /* Check Pods Manifest.lock */,
 				D2D866BC198E7BB3006C0565 /* Sources */,
 				D2D866BD198E7BB3006C0565 /* Frameworks */,
 				D2D866BE198E7BB3006C0565 /* Headers */,
 				D2D866BF198E7BB3006C0565 /* Resources */,
-				E5462147E2DD463EB562AA55 /* Copy Pods Resources */,
+				A92FDCB529B13ECD00C3D118 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,12 +415,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D86730198E7C48006C0565 /* Build configuration list for PBXNativeTarget "TMTLatexTableExample" */;
 			buildPhases = (
-				EF5DC7092FBF40ADA8098201 /* Check Pods Manifest.lock */,
 				D2D86705198E7C48006C0565 /* Sources */,
 				D2D86706198E7C48006C0565 /* Frameworks */,
 				D2D86707198E7C48006C0565 /* Resources */,
-				956E8EBDA9A342C6908B3E41 /* Copy Pods Resources */,
-				98F15DAE01D3595B1FABD416 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +469,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -522,84 +524,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		04FB2258B9094171AFF40724 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		956E8EBDA9A342C6908B3E41 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98F15DAE01D3595B1FABD416 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5462147E2DD463EB562AA55 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTLatexTableFramework/Pods-TMTLatexTableFramework-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF5DC7092FBF40ADA8098201 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2D866BC198E7BB3006C0565 /* Sources */ = {
@@ -787,7 +711,6 @@
 		};
 		D2D866EA198E7BB3006C0565 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3AAEB02DD0CCD7234F2AB2A /* Pods-TMTLatexTableFramework.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -796,6 +719,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableFramework/TMTLatexTableFramework-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableFramework/TMTLatexTableFramework-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -804,7 +728,6 @@
 		};
 		D2D866EB198E7BB3006C0565 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D11158E9CE2989102CD81D7 /* Pods-TMTLatexTableFramework.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -813,6 +736,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableFramework/TMTLatexTableFramework-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableFramework/TMTLatexTableFramework-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -835,6 +759,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TMTLatexTableFrameworkTests/TMTLatexTableFrameworkTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -854,6 +779,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableFramework/TMTLatexTableFramework-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableFrameworkTests/TMTLatexTableFrameworkTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -863,7 +789,6 @@
 		};
 		D2D86731198E7C48006C0565 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2C30D18D533BCAAFCCA5D6 /* Pods-TMTLatexTableExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -874,6 +799,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TMTLatexTableExample/TMTLatexTableExample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -882,13 +808,13 @@
 		};
 		D2D86732198E7C48006C0565 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8B4D178FAAE74C16D2F0E10 /* Pods-TMTLatexTableExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableExample/TMTLatexTableExample-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableExample/TMTLatexTableExample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -911,6 +837,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TMTLatexTableExampleTests/TMTLatexTableExampleTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -930,6 +857,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableExample/TMTLatexTableExample-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableExampleTests/TMTLatexTableExampleTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

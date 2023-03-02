@@ -8,7 +8,7 @@
 
 #import "TMTBibTexParser.h"
 #import "TMTBibTexEntry.h"
-#import <TMTHelperCollection/TMTLog.h>
+//#import <TMTHelperCollection/TMTLog.h>
 
 //LOGGING_DEFAULT
 
