@@ -5,7 +5,7 @@
 //  Created by Max Bannach on 28.09.13.
 //  Copyright (c) 2013 Tobias Mende. All rights reserved.
 
-#import <MMTabBarViewTMTFork/MMTabBarView.h>
+#import <MMTabBarView/MMTabBarView.h>
 
 #import "TMTTabViewController.h"
 #import "TMTTabManager.h"

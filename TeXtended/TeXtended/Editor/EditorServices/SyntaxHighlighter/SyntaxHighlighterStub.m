@@ -9,7 +9,7 @@
 #import "SyntaxHighlighterStub.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @implementation SyntaxHighlighterStub
 
@@ -17,34 +17,34 @@ LOGGING_DEFAULT
     {
         self = [super initWithTextView:tv];
         if (self) {
-            DDLogInfo(@"Init with text view %@", tv);
+//            DDLogInfo(@"Init with text view %@", tv);
         }
         return self;
     }
 
     - (void)highlightEntireDocument
     {
-        DDLogInfo(@"Highlighting entire Document");
+//        DDLogInfo(@"Highlighting entire Document");
     }
 
     - (void)highlightVisibleArea
     {
-        DDLogInfo(@"Highlighting visible area");
+//        DDLogInfo(@"Highlighting visible area");
     }
 
     - (void)highlightNarrowArea
     {
-        DDLogInfo(@"Highlighting narrow area");
+//        DDLogInfo(@"Highlighting narrow area");
     }
 
     - (void)highlightRange:(NSRange)range
     {
-        DDLogInfo(@"Highlighting range %@", NSStringFromRange(range));
+//        DDLogInfo(@"Highlighting range %@", NSStringFromRange(range));
     }
 
     - (void)dealloc
     {
-        DDLogDebug(@"dealloc");
+//        DDLogDebug(@"dealloc");
     }
 
 @end

@@ -146,7 +146,7 @@
 }
 
 - (void)dealloc {
-    DDLogDebug(@"dealloc [%@]", currentTasks);
+//    DDLogDebug(@"dealloc [%@]", currentTasks);
     [self terminateAndKill];
 }
 
@@ -162,7 +162,7 @@
 }
 
 - (void)compilationFinished:(CompileTask *)compileTask {
-    TMT_TRACE
+//    TMT_TRACE
     [self finish:compileTask];
     if (compileTask.shouldOpenPDF) {
         [[NSWorkspace sharedWorkspace] openFile:compileTask.pdfPath];

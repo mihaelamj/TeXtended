@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <MMTabBarViewTMTFork/MMTabBarItem.h>
+#import <MMTabBarView/MMTabBarItem.h>
 
 @interface TMTTabViewItem : NSObject <MMTabBarItem>
     {

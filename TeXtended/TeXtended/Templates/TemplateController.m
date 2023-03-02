@@ -14,7 +14,7 @@
 #import <TMTHelperCollection/TMTLog.h>
 #import "TemplatesCollectionView.h"
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 static NSString *TMTTemplateTypeKey = @"TMTTemplateTypeKey";
 
@@ -546,7 +546,7 @@ static NSString *TMTTemplateTypeKey = @"TMTTemplateTypeKey";
                 success &= [fm moveItemAtPath:sourcePath toPath:destPath error:&error];
             }
             if (error) {
-                DDLogError(@"%@", error);
+//                DDLogError(@"%@", error);
             }
         }
         if (success) {
