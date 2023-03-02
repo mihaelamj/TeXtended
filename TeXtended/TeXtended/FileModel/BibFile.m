@@ -5,8 +5,7 @@
 //  Created by Tobias Mende on 01.05.13.
 //  Copyright (c) 2013 Tobias Mende. All rights reserved.
 //
-
-#import "TMTBibTexEntry.h"
+#import <TMTBibTexTools/TMTBibTexEntry.h>
 #import "GenericFilePresenter.h"
 #import "TMTBibTexParser.h"
 

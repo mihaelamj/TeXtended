@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MMTabBarView.h"
+#import <MMTabBarView/MMTabBarView.h>
+//#import "MMTabBarView.h"
 
 @class TMTTabViewItem, TMTTabViewController;
 

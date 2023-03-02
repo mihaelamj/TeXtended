@@ -18,8 +18,10 @@
 #import "ProjectModel.h"
 #import "TrackingMessage.h"
 #import <TMTHelperCollection/FileObserver.h>
-#import <TMTHelperCollection/NSSet+TMTSerialization.h>
+//#import <TMTHelperCollection/NSSet+TMTSerialization.h>
 #import <OTMXAttribute/OTMXAttribute.h>
+
+#import "NSSet+TMTSerialization.h"
 
 LOGGING_DEFAULT_DYNAMIC
 
