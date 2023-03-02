@@ -10,7 +10,7 @@
 #import "TMTBibTexEntry.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 static NSCharacterSet *IGNORED_CHARACTERS_IN_ENTRY_ATTRIBUTES;
 static NSCharacterSet *LINE_END_CHARACTERS;
@@ -107,7 +107,7 @@ static NSCharacterSet *LINE_END_CHARACTERS;
         }
         lastScanLocation = scanner.scanLocation;
     }
-    DDLogDebug(@"Found %ld entries", entries.count);
+//    DDLogDebug(@"Found %ld entries", entries.count);
     return entries;
 }
 
@@ -300,13 +300,13 @@ static NSCharacterSet *LINE_END_CHARACTERS;
 #pragma mark - Debugging
 
 - (void)traceError {
-    DDLogError(@"BibTex Parser TRACE:");
+//    DDLogError(@"BibTex Parser TRACE:");
     [self traceScannerState];
-    DDLogDebug(@"%@", [NSThread callStackSymbols]);
+//    DDLogDebug(@"%@", [NSThread callStackSymbols]);
 }
 
 - (void)traceScannerState {
-    DDLogInfo(@"at %li: %@", scanner.scanLocation, [scanner.string substringWithRange:NSMakeRange(scanner.scanLocation, scanner.string.length - scanner.scanLocation > 60 ? 59 : scanner.string.length-scanner.scanLocation)]);
+//    DDLogInfo(@"at %li: %@", scanner.scanLocation, [scanner.string substringWithRange:NSMakeRange(scanner.scanLocation, scanner.string.length - scanner.scanLocation > 60 ? 59 : scanner.string.length-scanner.scanLocation)]);
 }
 
 @end

@@ -11,7 +11,7 @@
 #import "DBLPConfiguration.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface DBLPInterface ()
 
@@ -49,7 +49,7 @@ LOGGING_DEFAULT
                 return;
             }
             if(error) {
-                DDLogError(@"DBLP Connection failed: %@", error.userInfo);
+//                DDLogError(@"DBLP Connection failed: %@", error.userInfo);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.handler failedFetchingAuthors:error];
                 });
@@ -72,7 +72,7 @@ LOGGING_DEFAULT
     NSXMLDocument *xml = [[NSXMLDocument alloc] initWithData:authorData options:0 error:&error];
     NSMutableDictionary *results;
     if (error) {
-        DDLogError(@"Can't fetch anything: %@", error);
+//        DDLogError(@"Can't fetch anything: %@", error);
         [self.handler failedFetchingAuthors:error];
     } else {
         NSArray *a = [xml nodesForXPath:@"/authors/author" error:&error];
@@ -99,13 +99,13 @@ LOGGING_DEFAULT
     NSMutableArray *results;
 
     if (error) {
-        DDLogError(@"Can't fetch anything: %@", error);
+//        DDLogError(@"Can't fetch anything: %@", error);
         [self.handler failedFetchingKeys:error];
     } else {
         NSArray *a = [xml nodesForXPath:@"/dblpperson/dblpkey" error:&error];
         results = [NSMutableArray arrayWithCapacity:a.count];
         if (error) {
-            DDLogError(@"Can't extract dblpkeys from xml: %@", [error userInfo]);
+//            DDLogError(@"Can't extract dblpkeys from xml: %@", [error userInfo]);
         }
         for (NSXMLElement *node in a) {
             NSString *personRecord = [[node attributeForName:@"type"] stringValue];
@@ -141,7 +141,7 @@ LOGGING_DEFAULT
                 return;
             }
             if(error) {
-                DDLogError(@"DBLP Connection failed: %@", error.userInfo);
+//                DDLogError(@"DBLP Connection failed: %@", error.userInfo);
                 [self.handler failedFetchingKeys:error];
             } else {
                 [self finishKeysLoading:data];

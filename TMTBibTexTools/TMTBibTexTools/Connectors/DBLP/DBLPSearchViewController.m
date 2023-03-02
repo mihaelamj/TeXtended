@@ -13,7 +13,7 @@
 #import <TMTHelperCollection/TMTLog.h>
 
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface DBLPSearchViewController ()
 @end
@@ -60,7 +60,7 @@ LOGGING_DEFAULT
     if ([self.handler respondsToSelector:@selector(failedFetchingAuthors:)]) {
         [self.handler failedFetchingAuthors:error];
     }
-    DDLogError(@"Failed to fetch: %@", error.userInfo);
+//    DDLogError(@"Failed to fetch: %@", error.userInfo);
 }
 
 - (void)controlTextDidEndEditing:(NSNotification *)obj {

@@ -9,7 +9,7 @@
 #import "NSString+TMTExtensions.h"
 #import "TMTLog.h"
 
-LOGGING(DDLogLevelDebug)
+//LOGGING(DDLogLevelDebug)
 static const NSRegularExpression *SPACE_AT_LINE_BEGINNING;
 
 @implementation NSString (TMTExtensions)
@@ -94,7 +94,7 @@ static void initialize_NSString_TMTExtensions()
         }
     } else {
         result = NSMakeRange(NSNotFound, 0);
-        DDLogError(@"Error for provided range: %@", NSStringFromRange(range));
+//        DDLogError(@"Error for provided range: %@", NSStringFromRange(range));
     }
     return result;
 }

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
 
 
 #pragma mark - TMTLog Statements

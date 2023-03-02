@@ -9,7 +9,7 @@
 #import "PathObserverFactory.h"
 #import "TMTLog.h"
 
-LOGGING(DDLogLevelDebug)
+//LOGGING(DDLogLevelDebug)
 
 static NSMutableDictionary *PATH_OBSERVER_DICTIONARY;
 
@@ -78,7 +78,7 @@ void fsevents_callback(ConstFSEventStreamRef streamRef,
         if (!observer) {
             observer = [[PathObserver alloc] initWithPath:path];
             PATH_OBSERVER_DICTIONARY[path] = observer;
-            DDLogInfo(@"Creating pathObserver: %@ (%@)", observer, path);
+//            DDLogInfo(@"Creating pathObserver: %@ (%@)", observer, path);
         }
         return observer;
     }
@@ -86,7 +86,7 @@ void fsevents_callback(ConstFSEventStreamRef streamRef,
     + (void)removePathObserverForPath:(NSString *)path
     {
         [PATH_OBSERVER_DICTIONARY removeObjectForKey:path];
-        DDLogInfo(@"Removing pathObserver (%@)", path);
+//        DDLogInfo(@"Removing pathObserver (%@)", path);
     }
 
     + (void)removeObserver:(id)observer
@@ -241,7 +241,7 @@ void fsevents_callback(ConstFSEventStreamRef streamRef,
 
     - (void)dealloc
     {
-        DDLogVerbose(@"%@", filePath);
+//        DDLogVerbose(@"%@", filePath);
         FSEventStreamStop(stream);
         FSEventStreamInvalidate(stream);
 

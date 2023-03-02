@@ -10,7 +10,7 @@
 #import "DBLPConfiguration.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface TMTBibTexEntry ()
 
@@ -85,7 +85,7 @@ LOGGING_DEFAULT
     NSError *parseError;
     NSXMLDocument *doc = [[NSXMLDocument alloc] initWithData:data options:0 error:&parseError];
     if (parseError) {
-        DDLogError(@"Can't parse doc. %@", [parseError userInfo]);
+//        DDLogError(@"Can't parse doc. %@", [parseError userInfo]);
     } else {
         [self fetchGeneralInfos:doc];
     }
@@ -98,7 +98,7 @@ LOGGING_DEFAULT
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:theRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
-            DDLogError(@"Failed to request the data: %@", error.userInfo);
+//            DDLogError(@"Failed to request the data: %@", error.userInfo);
         } else {
             [self parseDocumentData:data];
         }
@@ -128,7 +128,7 @@ LOGGING_DEFAULT
     NSError *error;
     NSArray *array = [doc nodesForXPath:@"/dblp/*/*" error:&error];
     if (error) {
-        DDLogError(@"Can't generate dictionary: %@", error);
+//        DDLogError(@"Can't generate dictionary: %@", error);
     } else {
         self.dictionary = [NSMutableDictionary dictionaryWithCapacity:array.count];
         for (NSXMLElement *e in array) {
@@ -153,7 +153,7 @@ LOGGING_DEFAULT
 
 - (NSString *)bibtex {
     if (!self.dictionary) {
-        DDLogError(@"Can't generate bibtex (dictionary is nil)");
+//        DDLogError(@"Can't generate bibtex (dictionary is nil)");
     } else {
         NSMutableString *entry = [[NSMutableString alloc] init];
         [entry appendFormat:@"@%@{%@,\n", self.type, self.key];

@@ -52,12 +52,9 @@
 		D295821A19166D0B00C1B9E0 /* TMTTextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D295821419166B2B00C1B9E0 /* TMTTextFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F3885519F7C89200B4357C /* TMTBorderedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F3885319F7C89200B4357C /* TMTBorderedScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F3885719F7CCC400B4357C /* TMTBorderedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F3885419F7C89200B4357C /* TMTBorderedScrollView.m */; };
-		FE08952ADC994E2189508871 /* libPods-TMTHelperCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1532F53789A4EC497F2FBC3 /* libPods-TMTHelperCollection.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08706C3953A8E20CCB479669 /* Pods-TMTHelperCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTHelperCollection.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTHelperCollection/Pods-TMTHelperCollection.debug.xcconfig"; sourceTree = "<group>"; };
-		CDD88FFEBAFB60A4675EE98A /* Pods-TMTHelperCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTHelperCollection.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTHelperCollection/Pods-TMTHelperCollection.release.xcconfig"; sourceTree = "<group>"; };
 		D20E8AD319642A6F004ADAA2 /* TMTTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTTableViewDelegate.h; sourceTree = "<group>"; };
 		D22646C81962DD25007B6489 /* NSSet+TMTSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+TMTSerialization.h"; sourceTree = "<group>"; };
 		D22646C91962DD25007B6489 /* NSSet+TMTSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+TMTSerialization.m"; sourceTree = "<group>"; };
@@ -121,22 +118,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22DC1BD1863784800997ADB /* Cocoa.framework in Frameworks */,
-				FE08952ADC994E2189508871 /* libPods-TMTHelperCollection.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		801E2CEA81057A7B66DBAB49 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				08706C3953A8E20CCB479669 /* Pods-TMTHelperCollection.debug.xcconfig */,
-				CDD88FFEBAFB60A4675EE98A /* Pods-TMTHelperCollection.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D22646C71962DB41007B6489 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +140,6 @@
 				D22DC1C21863784800997ADB /* TMTHelperCollection */,
 				D22DC1BB1863784800997ADB /* Frameworks */,
 				D22DC1BA1863784800997ADB /* Products */,
-				801E2CEA81057A7B66DBAB49 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -383,12 +369,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D22DC1E11863784800997ADB /* Build configuration list for PBXNativeTarget "TMTHelperCollection" */;
 			buildPhases = (
-				482BAB5E7DAD412B8185ABA8 /* Check Pods Manifest.lock */,
 				D22DC1B41863784800997ADB /* Sources */,
 				D22DC1B51863784800997ADB /* Frameworks */,
 				D22DC1B61863784800997ADB /* Headers */,
 				D22DC1B71863784800997ADB /* Resources */,
-				5594BEF7D15747D3AF019D7D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,6 +397,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				de,
 			);
@@ -436,39 +421,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		482BAB5E7DAD412B8185ABA8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5594BEF7D15747D3AF019D7D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTHelperCollection/Pods-TMTHelperCollection-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D22DC1B41863784800997ADB /* Sources */ = {
@@ -591,7 +543,6 @@
 		};
 		D22DC1E21863784800997ADB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08706C3953A8E20CCB479669 /* Pods-TMTHelperCollection.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -610,7 +561,6 @@
 		};
 		D22DC1E31863784800997ADB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDD88FFEBAFB60A4675EE98A /* Pods-TMTHelperCollection.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;

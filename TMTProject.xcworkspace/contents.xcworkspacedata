@@ -2,18 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TMTBibTexTools/TMTBibTexTools.xcodeproj">
+      location = "group:TMTHelperCollection/TMTHelperCollection.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TMTHelperCollection/TMTHelperCollection.xcodeproj">
+      location = "group:TMTBibTexTools/TMTBibTexTools.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TMTLatexTableFramework/TMTLatexTableFramework.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TeXtended/TeXtended.xcodeproj">
+      location = "group:MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:TeXtended/TeXtended.xcodeproj">
    </FileRef>
 </Workspace>

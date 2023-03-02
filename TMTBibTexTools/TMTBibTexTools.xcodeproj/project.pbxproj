@@ -32,7 +32,6 @@
 		D2E071D61BDD008200018A78 /* BibtexWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E071D41BDD008200018A78 /* BibtexWindowController.m */; };
 		D2E071D91BDD00BB00018A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E071D81BDD00BB00018A78 /* AppDelegate.m */; };
 		D2E071DB1BDD011D00018A78 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E071DA1BDD011D00018A78 /* MainMenu.xib */; };
-		E8C328DE9806B72F35163F48 /* libPods-TMTBibTexTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B55066A07D914A33B9F5D22B /* libPods-TMTBibTexTools.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		262364C8EB8A0F065EF91BF1 /* Pods-DBLPTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBLPTool.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DBLPTool/Pods-DBLPTool.release.xcconfig"; sourceTree = "<group>"; };
-		8EC8045DE80B898B74376008 /* Pods-DBLPTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBLPTool.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-DBLPTool/Pods-DBLPTool.debug.xcconfig"; sourceTree = "<group>"; };
 		B55066A07D914A33B9F5D22B /* libPods-TMTBibTexTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTBibTexTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B914071ADB5126D9FACF36D4 /* Pods-TMTBibTexTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTBibTexTools.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTBibTexTools/Pods-TMTBibTexTools.release.xcconfig"; sourceTree = "<group>"; };
 		BA4BCAE70CE0C76C5E119FF7 /* libPods-DBLPTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBLPTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C654A19113227108C089D549 /* Pods-TMTBibTexTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMTBibTexTools.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TMTBibTexTools/Pods-TMTBibTexTools.debug.xcconfig"; sourceTree = "<group>"; };
 		D217A425176B442C002DB084 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D217A428176B442C002DB084 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D217A429176B442C002DB084 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -101,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C328DE9806B72F35163F48 /* libPods-TMTBibTexTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,17 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33C0F19DFB206437674AF0F7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C654A19113227108C089D549 /* Pods-TMTBibTexTools.debug.xcconfig */,
-				B914071ADB5126D9FACF36D4 /* Pods-TMTBibTexTools.release.xcconfig */,
-				8EC8045DE80B898B74376008 /* Pods-DBLPTool.debug.xcconfig */,
-				262364C8EB8A0F065EF91BF1 /* Pods-DBLPTool.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D217A419176B442C002DB084 = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +126,6 @@
 				D2E071C21BDD005800018A78 /* DBLPTool */,
 				D217A424176B442C002DB084 /* Frameworks */,
 				D217A423176B442C002DB084 /* Products */,
-				33C0F19DFB206437674AF0F7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,12 +265,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E0715B1BDCFEB100018A78 /* Build configuration list for PBXNativeTarget "TMTBibTexTools" */;
 			buildPhases = (
-				AD06C7F926217BAEAA043426 /* Check Pods Manifest.lock */,
 				D2E071451BDCFEB100018A78 /* Sources */,
 				D2E071461BDCFEB100018A78 /* Frameworks */,
 				D2E071471BDCFEB100018A78 /* Headers */,
 				D2E071481BDCFEB100018A78 /* Resources */,
-				52ABCD476D6A6C6E02984C39 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,6 +342,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				de,
 				Base,
@@ -408,21 +389,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52ABCD476D6A6C6E02984C39 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTBibTexTools/Pods-TMTBibTexTools-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9CCEBF42130AA71D214EB47E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -451,21 +417,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-DBLPTool/Pods-DBLPTool-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD06C7F926217BAEAA043426 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		ED0FAC4991B3A0FC705CF9AD /* Embed Pods Frameworks */ = {
@@ -600,7 +551,6 @@
 		};
 		D2E0715C1BDCFEB100018A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C654A19113227108C089D549 /* Pods-TMTBibTexTools.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -641,7 +591,6 @@
 		};
 		D2E0715D1BDCFEB100018A78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B914071ADB5126D9FACF36D4 /* Pods-TMTBibTexTools.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -742,7 +691,6 @@
 		};
 		D2E071D01BDD005800018A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EC8045DE80B898B74376008 /* Pods-DBLPTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -774,7 +722,6 @@
 		};
 		D2E071D11BDD005800018A78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 262364C8EB8A0F065EF91BF1 /* Pods-DBLPTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

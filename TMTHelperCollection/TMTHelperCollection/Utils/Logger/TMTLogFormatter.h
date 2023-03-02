@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TMTLog.h"
 
-@interface TMTLogFormatter : NSObject <DDLogFormatter>
+@interface TMTLogFormatter : NSObject //<DDLogFormatter>
 
     @property BOOL extended;
 
