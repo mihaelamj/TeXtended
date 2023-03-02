@@ -12,7 +12,7 @@
 #import "TrackingMessage.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 @implementation LacheckParser
 
 /**
@@ -61,8 +61,8 @@ LOGGING_DEFAULT
             [task launch];
         }
         @catch (NSException *exception) {
-            DDLogError(@"Cant'start lacheck task %@. Exception: %@ (%@)", task, exception.reason, exception.name);
-            DDLogDebug(@"%@", [NSThread callStackSymbols]);
+//            DDLogError(@"Cant'start lacheck task %@. Exception: %@ (%@)", task, exception.reason, exception.name);
+//            DDLogDebug(@"%@", [NSThread callStackSymbols]);
             completionHandler(nil);
         }
 
@@ -83,7 +83,7 @@ LOGGING_DEFAULT
         NSError *error;
         NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^\"(.*)\",\\sline\\s(.*):\\s(.*)$" options:NSRegularExpressionAnchorsMatchLines error:&error];
         if (error) {
-            DDLogError(@"Lacheck Regex Invalid: %@", [error userInfo]);
+//            DDLogError(@"Lacheck Regex Invalid: %@", [error userInfo]);
             return nil;
         }
 

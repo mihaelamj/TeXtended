@@ -7,7 +7,8 @@
 //
 
 #import "EditorService.h"
-#import <TMTBibTexTools/DBLPSearchCompletionHandler.h>
+//#import <TMTBibTexTools/DBLPSearchCompletionHandler.h>
+#import "DBLPSearchCompletionHandler.h"
 
 @class DBLPSearchViewController;
 

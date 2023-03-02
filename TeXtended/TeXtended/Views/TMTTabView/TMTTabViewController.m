@@ -15,7 +15,7 @@
 #import "TMTTabManager.h"
 #import "Constants.h"
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface TMTTabViewController ()
 
@@ -64,7 +64,7 @@ LOGGING_DEFAULT
 
     - (void)dealloc
     {
-        DDLogDebug(@"dealloc [%@]", self.tabView);
+//        DDLogDebug(@"dealloc [%@]", self.tabView);
         for (NSTabViewItem *item in self.tabView.tabViewItems) {
             [self handleTabClose:item];
         }
@@ -238,7 +238,7 @@ LOGGING_DEFAULT
     - (void)tabView:(NSTabView *)aTabView didCloseTabViewItem:(NSTabViewItem *)tabViewItem
     {
         [self handleTabClose:tabViewItem];
-        DDLogWarn(@"Closing %@", tabViewItem);
+//        DDLogWarn(@"Closing %@", tabViewItem);
     }
 
 - (void)closeAll {

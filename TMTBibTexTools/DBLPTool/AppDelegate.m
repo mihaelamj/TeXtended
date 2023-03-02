@@ -8,8 +8,8 @@
 
 //#import <TMTHelperCollection/TMTLog.h>
 #import "AppDelegate.h"
-#import <TMTBibTexTools/DBLPSearchViewController.h>
-//#import "DBLPSearchViewController.h"
+//#import <TMTBibTexTools/DBLPSearchViewController.h>
+#import "DBLPSearchViewController.h"
 #import "BibtexWindowController.h"
 //LOGGING_DEFAULT
 

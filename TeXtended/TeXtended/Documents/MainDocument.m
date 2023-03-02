@@ -17,7 +17,7 @@
 #import "ShareDialogController.h"
 #import "TemplateController.h"
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 @interface MainDocument ()
 
@@ -29,7 +29,7 @@ LOGGING_DEFAULT_DYNAMIC
 @implementation MainDocument
 
 + (void)initialize {
-    LOGGING_LOAD
+//    LOGGING_LOAD
 }
 
     - (id)init
@@ -121,7 +121,7 @@ LOGGING_DEFAULT_DYNAMIC
 
     - (void)initializeDocumentControllers
     {
-        DDLogDebug(@"initializeDocumentControllers (Count: %li)", self.model.mainDocuments.count);
+//        DDLogDebug(@"initializeDocumentControllers (Count: %li)", self.model.mainDocuments.count);
         self.documentControllers = [NSMutableSet new];
         for (DocumentModel *m in self.model.openDocuments) {
             [self.documentControllers addObject:[[DocumentController alloc] initWithDocument:m andMainDocument:self]];
@@ -139,7 +139,7 @@ LOGGING_DEFAULT_DYNAMIC
 
     - (void)makeWindowControllers
     {
-        DDLogDebug(@"makeWindowControllers");
+//        DDLogDebug(@"makeWindowControllers");
         MainWindowController *mc = [[MainWindowController alloc] initForDocument:self];
         self.mainWindowController = mc;
         [self initializeDocumentControllers];

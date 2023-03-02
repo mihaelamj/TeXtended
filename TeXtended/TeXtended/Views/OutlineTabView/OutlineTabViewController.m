@@ -15,7 +15,7 @@
 #import "MainDocument.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 static const NSUInteger MESSAGE_TAB_TAG = 0;
 
@@ -125,7 +125,7 @@ static const NSUInteger OUTLINE_TAB_TAG = 1;
         } else if (tag == OUTLINE_TAB_TAG) {
             vc = [[StructureOutlineViewController alloc] initWithRootNode:model];
         } else {
-            DDLogError(@"Unexpected Case!");
+//            DDLogError(@"Unexpected Case!");
             return;
         }
         self.currentViewController = vc;

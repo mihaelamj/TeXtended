@@ -16,7 +16,7 @@
 #import <TMTHelperCollection/TMTLog.h>
 #import "ProjectCreationWindowController.h"
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 @interface DocumentCreationController ()
 
@@ -28,7 +28,7 @@ LOGGING_DEFAULT_DYNAMIC
 
 @implementation DocumentCreationController
 + (void)initialize {
-    LOGGING_LOAD
+//    LOGGING_LOAD
 }
 
     - (NSInteger)runModalOpenPanel:(NSOpenPanel *)openPanel forTypes:(NSArray *)types
@@ -70,7 +70,7 @@ LOGGING_DEFAULT_DYNAMIC
                 [document saveToURL:document.fileURL ofType:@"TeXtendedProjectFile" forSaveOperation:NSSaveOperation completionHandler:^(NSError *errorOrNil)
                 {
                     if (errorOrNil) {
-                        DDLogWarn(@"Error while saving: %@", errorOrNil.userInfo);
+//                        DDLogWarn(@"Error while saving: %@", errorOrNil.userInfo);
                     }
                 }];
                 [weakSelf addDocument:document];

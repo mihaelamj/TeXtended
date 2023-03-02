@@ -26,7 +26,7 @@
 #import <TMTHelperCollection/NSString+TMTExtensions.h>
 #import "NSTextView+TMTEditorExtension.h"
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 static const double UPDATE_AFTER_SCROLL_DELAY = 1.0;
 
@@ -68,7 +68,7 @@ static const NSSet *DEFAULT_KEYS_TO_OBSERVE;
 
 + (void)initialize {
     if (self == [HighlightingTextView class]) {
-        LOGGING_LOAD
+//        LOGGING_LOAD
         DEFAULT_KEYS_TO_OBSERVE = [NSSet setWithObjects:TMT_EDITOR_SELECTION_BACKGROUND_COLOR, TMT_EDITOR_SELECTION_FOREGROUND_COLOR, TMT_EDITOR_LINE_WRAP_MODE, TMT_EDITOR_HARD_WRAP_AFTER, TMT_REPLACE_INVISIBLE_SPACES, TMT_REPLACE_INVISIBLE_LINEBREAKS, TMTLineSpacing, nil];
     }
 }
@@ -243,7 +243,7 @@ static const NSSet *DEFAULT_KEYS_TO_OBSERVE;
             [self complete:self];
         }
     } else {
-        DDLogInfo(@"Latex LineBreak");
+//        DDLogInfo(@"Latex LineBreak");
     }
     [bracketHighlighter handleBracketsOnInsertWithInsertion:str];
     NSRange lineRange = [self.string lineRangeForRange:self.selectedRange];

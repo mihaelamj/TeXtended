@@ -11,7 +11,7 @@
 #import <TMTHelperCollection/TMTLog.h>
 #import "ProjectModel.h"
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface MainDocumentsSelectionViewController ()
 
@@ -72,7 +72,7 @@ LOGGING_DEFAULT
                     if (!error) {
                         [self.possibleDocuments addObject:path];
                     } else {
-                        DDLogError(@"Can't create document at %@: %@", path, error.userInfo);
+//                        DDLogError(@"Can't create document at %@: %@", path, error.userInfo);
                     }
                 }
             }
@@ -90,7 +90,7 @@ LOGGING_DEFAULT
         NSError *error;
         NSArray *dirContents = [fm contentsOfDirectoryAtPath:path error:&error];
         if (error) {
-            DDLogError(@"Can't get content: %@", error.userInfo);
+//            DDLogError(@"Can't get content: %@", error.userInfo);
             return;
         }
         NSArray *texFiles = [dirContents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"pathExtension like \"tex\""]];

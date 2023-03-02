@@ -10,7 +10,8 @@
 #import "MainWindowController.h"
 #import "DocumentController.h"
 #import "EncodingController.h"
-#import <TMTHelperCollection/TMTHelperCollection.h>
+//#import "TMTHelperCollection.h"
+//#import <TMTHelperCollection/TMTHelperCollection.h>
 #import "DocumentCreationController.h"
 #import "ConsoleManager.h"
 #import "MergeWindowController.h"
@@ -18,7 +19,7 @@
 #import "TemplateController.h"
 #import "TextViewController.h"
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 static const NSSet *standardDocumentTypes;
 
@@ -31,7 +32,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
     + (void)initialize
     {
         if (self == [SimpleDocument class]) {
-            LOGGING_LOAD
+//            LOGGING_LOAD
             standardDocumentTypes = [[NSSet alloc] initWithObjects:@"Latex Document", @"Latex Class Document", @"Latex Style Document", nil];
             autosave = YES;
 
@@ -51,7 +52,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
 
     - (void)setModel:(DocumentModel *)model
     {
-        TMT_TRACE
+//        TMT_TRACE
         if (_model) {
             [[NSNotificationCenter defaultCenter] removeObserver:self name:TMTFirstResponderDelegateChangeNotification object:_model];
         }
@@ -65,7 +66,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
 
     - (void)saveEntireDocumentWithDelegate:(id)delegate andSelector:(SEL)action
     {
-        TMT_TRACE
+//        TMT_TRACE
         if (self.documentNeedsSaving) {
             [self autosaveDocumentWithDelegate:delegate didAutosaveSelector:action contextInfo:NULL];
         } else if(delegate && [delegate respondsToSelector:action]) {
@@ -85,7 +86,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
 
     - (void)saveToURL:(NSURL *)absoluteURL ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation delegate:(id)delegate didSaveSelector:(SEL)didSaveSelector contextInfo:(void *)contextInfo
     {
-        TMT_TRACE
+//        TMT_TRACE
         [super saveToURL:absoluteURL ofType:typeName forSaveOperation:saveOperation delegate:delegate didSaveSelector:didSaveSelector contextInfo:contextInfo];
 
         NSNumber *encoding = [[self.encController.popUp selectedItem] representedObject];
@@ -97,7 +98,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
 
     - (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation originalContentsURL:(NSURL *)absoluteOriginalContentsURL error:(NSError * __autoreleasing *)outError
     {
-        TMT_TRACE
+//        TMT_TRACE
         if (saveOperation != NSAutosaveInPlaceOperation && saveOperation != NSAutosaveElsewhereOperation) {
             [self.documentControllers makeObjectsPerformSelector:@selector(breakUndoCoalescing)];
         }
@@ -117,7 +118,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
                 self.model.systemPath = url.path;
                 return [self saveAllContent:outError force:YES];
             default:
-                DDLogDebug(@"URL(%@), ORIGINAL(%@)", url, absoluteOriginalContentsURL);
+//                DDLogDebug(@"URL(%@), ORIGINAL(%@)", url, absoluteOriginalContentsURL);
                 self.model.systemPath = [url path];
                 if (absoluteOriginalContentsURL) {
                     self.model.texPath = absoluteOriginalContentsURL.path;
@@ -146,7 +147,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
                 NSError *error;
                 [template save:&error];
                 if (error) {
-                    DDLogError(@"%@", error);
+//                    DDLogError(@"%@", error);
                     NSAlert *alert = [NSAlert alertWithError:error];
                     [alert runModal];
                     return;
@@ -155,7 +156,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
                 DocumentController *dc = weakSelf.documentControllers.anyObject;
                 [template setDocumentWithContent:dc.textViewController.content model:weakSelf.model andError:&error];
                 if (error) {
-                    DDLogError(@"%@", error);
+//                    DDLogError(@"%@", error);
                     NSAlert *alert = [NSAlert alertWithError:error];
                     [alert runModal];
                     return;
@@ -168,7 +169,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
 
     - (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * __autoreleasing *)outError
     {
-        TMT_TRACE
+//        TMT_TRACE
         if (outError != NULL) {
             *outError = nil;
         }
@@ -179,7 +180,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
             return NO;
         }
         if (!self.model) {
-            DDLogError(@"The document model should not be nil!");
+//            DDLogError(@"The document model should not be nil!");
         }
 
         self.model.systemPath = [url path];
@@ -260,7 +261,7 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
                     NSError *error;
                     [content writeToFile:path atomically:YES encoding:[@([self.encController selection]) longValue] error:&error];
                     if (error) {
-                        DDLogError(@"Can't create document at %@: %@", path, error.userInfo);
+//                        DDLogError(@"Can't create document at %@: %@", path, error.userInfo);
                     }
                 }
             }
@@ -269,14 +270,14 @@ static const NSSet *SELECTORS_HANDLED_BY_DC;
 
     - (void)setFileURL:(NSURL *)url
     {
-        TMT_TRACE
+//        TMT_TRACE
         [super setFileURL:url];
         self.model.texPath = url.path;
     }
 
     - (void)dealloc
     {
-        DDLogDebug(@"dealloc [%@]", self.fileURL);
+//        DDLogDebug(@"dealloc [%@]", self.fileURL);
         [[ConsoleManager sharedConsoleManager] removeConsoleForModel:self.model];
     }
 

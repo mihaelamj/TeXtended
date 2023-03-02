@@ -19,7 +19,7 @@
 #import "TemplateController.h"
 #import "ModelInfoWindowController.h"
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 @interface ProjectDocument ()
 
@@ -29,7 +29,7 @@ LOGGING_DEFAULT_DYNAMIC
 @implementation ProjectDocument
 
 + (void)initialize {
-    LOGGING_LOAD
+//    LOGGING_LOAD
 }
 
     + (BOOL)preservesVersions
@@ -97,7 +97,7 @@ LOGGING_DEFAULT_DYNAMIC
                 NSError *error;
                 [dc saveDocumentModel:&error];
                 if (error) {
-                    DDLogError(@"Can't save texfile %@. Error: %@", dc.model.texPath, error.userInfo);
+//                    DDLogError(@"Can't save texfile %@. Error: %@", dc.model.texPath, error.userInfo);
                     if (outError != NULL) {
                         *outError = error;
                     }
@@ -107,7 +107,7 @@ LOGGING_DEFAULT_DYNAMIC
             }
         }
         @catch (NSException *exception) {
-            DDLogError(@"Can't write content: %@", exception.userInfo);
+//            DDLogError(@"Can't write content: %@", exception.userInfo);
             return NO;
         }
         return YES;
@@ -123,7 +123,7 @@ LOGGING_DEFAULT_DYNAMIC
                 NSError *error;
                 [template save:&error];
                 if (error) {
-                    DDLogError(@"%@", error);
+//                    DDLogError(@"%@", error);
                     NSAlert *alert = [NSAlert alertWithError:error];
                     [alert runModal];
                     return;
@@ -131,7 +131,7 @@ LOGGING_DEFAULT_DYNAMIC
 
                 [template setProjectWithPath:weakSelf.model.path model:weakSelf.model andError:&error];
                 if (error) {
-                    DDLogError(@"%@", error);
+//                    DDLogError(@"%@", error);
                     NSAlert *alert = [NSAlert alertWithError:error];
                     [alert runModal];
                     return;
@@ -148,13 +148,13 @@ LOGGING_DEFAULT_DYNAMIC
             id obj = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfURL:absoluteURL]];
             if (obj) {
                 self.model = (ProjectModel *) obj;
-                DDLogDebug(@"READ: %@", absoluteURL);
+//                DDLogDebug(@"READ: %@", absoluteURL);
                 [self.model finishInitWithPath:[absoluteURL path]];
 
             }
         }
         @catch (NSException *exception) {
-            DDLogError(@"Can't read content: %@", exception);
+//            DDLogError(@"Can't read content: %@", exception);
             return NO;
         }
         return YES;
@@ -247,7 +247,7 @@ LOGGING_DEFAULT_DYNAMIC
                         NSError *error;
                         [content writeToFile:p atomically:YES encoding:[@([self.encController selection]) longValue] error:&error];
                         if (error) {
-                            DDLogError(@"Can't create document at %@: %@", p, error.userInfo);
+//                            DDLogError(@"Can't create document at %@: %@", p, error.userInfo);
                         }
                     }
                 }];

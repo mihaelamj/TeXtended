@@ -13,7 +13,7 @@
 #import "ExtendedPDFViewController.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 static NSString *TEMP_PREFIX = @"TMTTempQuickPreview-";
 
@@ -131,7 +131,7 @@ static NSString *TEMP_PREFIX = @"TMTTempQuickPreview-";
         [content writeToFile:self.model.texPath atomically:YES encoding:self.model.encoding.unsignedLongValue error:&error];
        
     } else {
-        DDLogError(@"Can't get header ");
+//        DDLogError(@"Can't get header ");
     }
     
 }
@@ -183,13 +183,13 @@ static NSString *TEMP_PREFIX = @"TMTTempQuickPreview-";
             NSString *directory = [self.model.texPath stringByDeletingLastPathComponent];
             NSArray *contents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:directory error:&error];
             if (error) {
-                DDLogError(@"Can't delete temp file: %@", error.userInfo);
+//                DDLogError(@"Can't delete temp file: %@", error.userInfo);
             } else {
                 for (NSString *path in contents) {
                     if ([path hasPrefix:TEMP_PREFIX]) {
                         [[NSFileManager defaultManager] removeItemAtPath:[directory stringByAppendingPathComponent:path] error:&error];
                         if (error) {
-                            DDLogWarn(@"Can't delete file at %@", path);
+//                            DDLogWarn(@"Can't delete file at %@", path);
                             error = nil;
                         }
                     }

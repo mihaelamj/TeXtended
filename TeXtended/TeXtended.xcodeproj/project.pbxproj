@@ -31,13 +31,14 @@
 		766E35AE1780BE4C00028704 /* PageNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E35AC1780BE4C00028704 /* PageNumberViewController.m */; };
 		766E35AF1780BE4C00028704 /* PageNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766E35AD1780BE4C00028704 /* PageNumberView.xib */; };
 		76B88F8E183787C2006B0E9F /* ProjectCreationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B88F8C183787C2006B0E9F /* ProjectCreationWindowController.m */; };
-		77A80BDBBB3631BE90B8E701 /* libPods-TeXtended Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2C09292FFF4E7494D6B4C0 /* libPods-TeXtended Tests.a */; };
 		A92FDCBD29B1502600C3D118 /* TMTBibTexTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCBC29B1502600C3D118 /* TMTBibTexTools.framework */; };
 		A92FDCBE29B1502600C3D118 /* TMTBibTexTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCBC29B1502600C3D118 /* TMTBibTexTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A92FDCC129B1504300C3D118 /* TMTHelperCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCC029B1504300C3D118 /* TMTHelperCollection.framework */; };
 		A92FDCC229B1504300C3D118 /* TMTHelperCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCC029B1504300C3D118 /* TMTHelperCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A92FDCC429B1509C00C3D118 /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCC329B1509C00C3D118 /* MMTabBarView.framework */; };
 		A92FDCC529B1509D00C3D118 /* MMTabBarView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92FDCC329B1509C00C3D118 /* MMTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92FDCCE29B162EA00C3D118 /* DMPaletteContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A92FDCCA29B162EA00C3D118 /* DMPaletteContainer.m */; };
+		A92FDCCF29B162EA00C3D118 /* DMPaletteSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A92FDCCD29B162EA00C3D118 /* DMPaletteSectionView.m */; };
 		D202A070189A415B0023DA04 /* TextViewLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D202A06F189A415B0023DA04 /* TextViewLayoutManager.m */; };
 		D2078D4F1837B5B9001C4A56 /* MainDocumentsSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2078D4D1837B5B9001C4A56 /* MainDocumentsSelectionViewController.m */; };
 		D2078D541837B620001C4A56 /* BibFilesSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2078D521837B620001C4A56 /* BibFilesSelectionViewController.m */; };
@@ -366,11 +367,13 @@
 		766E35AD1780BE4C00028704 /* PageNumberView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageNumberView.xib; sourceTree = "<group>"; };
 		76B88F8B183787C2006B0E9F /* ProjectCreationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCreationWindowController.h; sourceTree = "<group>"; };
 		76B88F8C183787C2006B0E9F /* ProjectCreationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCreationWindowController.m; sourceTree = "<group>"; };
-		8B2C09292FFF4E7494D6B4C0 /* libPods-TeXtended Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeXtended Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92FDCBC29B1502600C3D118 /* TMTBibTexTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTBibTexTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92FDCC029B1504300C3D118 /* TMTHelperCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTHelperCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92FDCC329B1509C00C3D118 /* MMTabBarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMTabBarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D07C4DE468DD4E0CA7E079D7 /* libPods-TeXtended.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeXtended.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92FDCCA29B162EA00C3D118 /* DMPaletteContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPaletteContainer.m; sourceTree = "<group>"; };
+		A92FDCCB29B162EA00C3D118 /* DMPaletteContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPaletteContainer.h; sourceTree = "<group>"; };
+		A92FDCCC29B162EA00C3D118 /* DMPaletteSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPaletteSectionView.h; sourceTree = "<group>"; };
+		A92FDCCD29B162EA00C3D118 /* DMPaletteSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPaletteSectionView.m; sourceTree = "<group>"; };
 		D202A06E189A415B0023DA04 /* TextViewLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewLayoutManager.h; sourceTree = "<group>"; };
 		D202A06F189A415B0023DA04 /* TextViewLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewLayoutManager.m; sourceTree = "<group>"; };
 		D2078D4C1837B5B9001C4A56 /* MainDocumentsSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDocumentsSelectionViewController.h; sourceTree = "<group>"; };
@@ -516,7 +519,6 @@
 		D2574994186324730025A536 /* DBLPButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLPButtonView.m; sourceTree = "<group>"; };
 		D25749A01863515C0025A536 /* DBLPIntegrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLPIntegrator.h; sourceTree = "<group>"; };
 		D25749A11863515C0025A536 /* DBLPIntegrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLPIntegrator.m; sourceTree = "<group>"; };
-		D25749BA186370450025A536 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D25FBAAA18903EED00FD3987 /* MainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainToolbar.h; sourceTree = "<group>"; };
 		D25FBAAB18903EED00FD3987 /* MainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainToolbar.m; sourceTree = "<group>"; };
 		D25FF83217651C5D00530928 /* ExportCompileWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportCompileWindowController.h; sourceTree = "<group>"; };
@@ -824,7 +826,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77A80BDBBB3631BE90B8E701 /* libPods-TeXtended Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +918,17 @@
 				D2D712321837E7FF0072BA22 /* ProjectCreationAssistantViewController.h */,
 			);
 			path = ProjectCreation;
+			sourceTree = "<group>";
+		};
+		A92FDCD029B162F200C3D118 /* DMPalette */ = {
+			isa = PBXGroup;
+			children = (
+				A92FDCCB29B162EA00C3D118 /* DMPaletteContainer.h */,
+				A92FDCCA29B162EA00C3D118 /* DMPaletteContainer.m */,
+				A92FDCCC29B162EA00C3D118 /* DMPaletteSectionView.h */,
+				A92FDCCD29B162EA00C3D118 /* DMPaletteSectionView.m */,
+			);
+			path = DMPalette;
 			sourceTree = "<group>";
 		};
 		D202A06D189A415B0023DA04 /* LayoutManager */ = {
@@ -1609,6 +1621,7 @@
 		D2CC54E7171EAFAB00D81CF1 = {
 			isa = PBXGroup;
 			children = (
+				A92FDCD029B162F200C3D118 /* DMPalette */,
 				D2A92C421882F71500F1679F /* projecticon.icns */,
 				D266F6EB1ABEE80B00FD548B /* TeXtended Tests */,
 				D2CC54F2171EAFAB00D81CF1 /* Frameworks */,
@@ -1637,10 +1650,7 @@
 				D23FD40D1863A4D7006BFD33 /* Sparkle.framework */,
 				D2A439E9171EF5130020C15F /* Quartz.framework */,
 				D2CC54F3171EAFAB00D81CF1 /* Cocoa.framework */,
-				D25749BA186370450025A536 /* XCTest.framework */,
 				D2CC54F5171EAFAB00D81CF1 /* Other Frameworks */,
-				D07C4DE468DD4E0CA7E079D7 /* libPods-TeXtended.a */,
-				8B2C09292FFF4E7494D6B4C0 /* libPods-TeXtended Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2050,6 +2060,7 @@
 				D2C2357B1895118A0096ECAA /* OutlineExtractor.m in Sources */,
 				D2E7A4E61768E8F400B2BA3C /* ApplicationController.m in Sources */,
 				D2E7A4EC1768E8F400B2BA3C /* CompileSetting.m in Sources */,
+				A92FDCCE29B162EA00C3D118 /* DMPaletteContainer.m in Sources */,
 				D2E7A4ED1768E8F400B2BA3C /* BibFile.m in Sources */,
 				D2E7A4EE1768E8F400B2BA3C /* ProjectModel.m in Sources */,
 				D25749A21863515C0025A536 /* DBLPIntegrator.m in Sources */,
@@ -2086,6 +2097,7 @@
 				D2E7A4FF1768E8F400B2BA3C /* LatexSyntaxHighlighter.m in Sources */,
 				D2E7A5001768E8F400B2BA3C /* SyntaxHighlighterStub.m in Sources */,
 				D22A6BEE181C148700364DD6 /* TMTCustomView.m in Sources */,
+				A92FDCCF29B162EA00C3D118 /* DMPaletteSectionView.m in Sources */,
 				D2A739D418D4B056005991D5 /* OutlineHelper.m in Sources */,
 				D202A070189A415B0023DA04 /* TextViewLayoutManager.m in Sources */,
 				D20E8ACF196404A2004ADAA2 /* CompletionWhiteSpaceValueTransformer.m in Sources */,

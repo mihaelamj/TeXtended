@@ -6,17 +6,16 @@
 //  Copyright (c) 2013 Tobias Mende. All rights reserved.
 //
 
-#import <TMTBibTexTools/TMTBibTexParser.h>
-#import <TMTBibTexTools/TMTBibTexEntry.h>
-#import <TMTHelperCollection/GenericFilePresenter.h>
-#import <TMTHelperCollection/TMTLog.h>
+#import "TMTBibTexEntry.h"
+#import "GenericFilePresenter.h"
+#import "TMTBibTexParser.h"
 
 #import "BibFile.h"
 #import "CiteCompletion.h"
 #import "NSString+PathExtension.h"
 #import "ProjectModel.h"
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 @interface BibFile ()
 
@@ -35,7 +34,7 @@ LOGGING_DEFAULT_DYNAMIC
 # pragma mark - Init & Dealloc
 
 + (void)initialize {
-    LOGGING_LOAD
+//    LOGGING_LOAD
 }
 
     - (void)dealloc

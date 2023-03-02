@@ -13,7 +13,7 @@
 #import <TMTHelperCollection/NSString+TMTExtensions.h>
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 static NSSet *USER_DEFAULTS_BINDING_KEYS;
 static const NSCharacterSet *ALL_SYMBOLS;
@@ -40,7 +40,7 @@ static const NSCharacterSet *CURLY_BRACKETS, *ROUND_BRACKETS, *RECT_BRACKETS, *C
 
     + (void)initialize
     {
-        LOGGING_LOAD
+//        LOGGING_LOAD
         USER_DEFAULTS_BINDING_KEYS = [NSSet setWithObjects:@"inlineMathColor", @"commandColor", @"bracketColor", @"curlyBracketColor", @"commentColor", @"shouldHighlightArguments", @"shouldHighlightCommands", @"shouldHighlightComments", @"shouldHighlightBrackets", @"shouldHighlightInlineMath", nil];
         ALL_SYMBOLS = [NSCharacterSet characterSetWithCharactersInString:@"()[]{}%$\\"];
         CURLY_BRACKETS = [NSCharacterSet characterSetWithCharactersInString:@"{}"];
@@ -203,7 +203,7 @@ static const NSCharacterSet *CURLY_BRACKETS, *ROUND_BRACKETS, *RECT_BRACKETS, *C
                 } else if (scanner.isAtEnd) {
                     // ignore this case. no special symbols in content
                 } else {
-                    DDLogError(@"Unexpected Case!! Seeing: %@", [view.string substringToIndex:location+rangeStart]);
+//                    DDLogError(@"Unexpected Case!! Seeing: %@", [view.string substringToIndex:location+rangeStart]);
                 }
                 rangeStart = scanner.scanLocation;
          

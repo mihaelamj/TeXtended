@@ -349,7 +349,7 @@
             TMT_EDITOR_FONT_SIZE : @12.0f,
             TMT_EDITOR_FONT_ITALIC : @NO,
             TMT_EDITOR_FONT_BOLD : @NO,
-            TMT_LOG_LEVEL_KEY : @(DDLogLevelWarning),
+//            TMT_LOG_LEVEL_KEY : @(DDLogLevelWarning),
             TMTGridColor : [NSArchiver archivedDataWithRootObject:[NSColor grayColor]],
             TMTGridUnit : @"pt",
             TMTdrawHGrid : @NO,

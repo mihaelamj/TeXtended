@@ -16,7 +16,7 @@
 #import <TMTHelperCollection/NSString+TMTExtensions.h>
 #import <TMTHelperCollection/NSString+LatexExtensions.h>
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 static const NSDictionary *ELEMENT_EXTRACTOR_REGEX_LOOKUP;
 
@@ -38,7 +38,7 @@ static const NSDictionary *TYPE_STRING_LOOKUP;
     + (void)initialize
     {
         if (self == [OutlineExtractor class]) {
-            LOGGING_LOAD
+//            LOGGING_LOAD
             ELEMENT_EXTRACTOR_REGEX_LOOKUP = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"OutlineElementTypeLookupTable" ofType:@"plist"]];
             TYPE_STRING_LOOKUP = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"OutlineElementTypeStringLookupTable" ofType:@"plist"]];
         }
@@ -87,7 +87,7 @@ static const NSDictionary *TYPE_STRING_LOOKUP;
                 continue;
             }
             if (infoRange.location == NSNotFound) {
-                DDLogError(@"%li - %@", result.numberOfRanges, NSStringFromRange(totalRange));
+//                DDLogError(@"%li - %@", result.numberOfRanges, NSStringFromRange(totalRange));
                 continue;
             }
             element.info = [_content substringWithRange:infoRange];
@@ -197,7 +197,7 @@ static const NSDictionary *TYPE_STRING_LOOKUP;
             NSError *error;
             masterRegex = [NSRegularExpression regularExpressionWithPattern:regex options:0 error:&error];
             if (error) {
-                DDLogError(@"%@", error);
+//                DDLogError(@"%@", error);
             }
         }
 

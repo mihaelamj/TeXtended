@@ -10,7 +10,7 @@
 #import "OutlineElement.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @implementation OutlineHelper
 
@@ -26,7 +26,7 @@ LOGGING_DEFAULT
                     [result addObjectsFromArray:[OutlineHelper flatten:[obj children] withPath:path]];
                     [path removeObject:obj];
                 } else {
-                    DDLogError(@"Tree contains loop. Breaking loop");
+//                    DDLogError(@"Tree contains loop. Breaking loop");
                 }
             }
         }

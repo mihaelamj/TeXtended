@@ -10,7 +10,7 @@
 #import <TMTHelperCollection/TMTLog.h>
 #import <TMTHelperCollection/NSString+LatexExtensions.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface LatexSpellChecker ()
 
@@ -68,7 +68,7 @@ LOGGING_DEFAULT
 
         prefixesToIgnore = [strings componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
         if (!prefixesToIgnore) {
-            DDLogError(@"Can't load prefixes!");
+//            DDLogError(@"Can't load prefixes!");
         }
 
     }

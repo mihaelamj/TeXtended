@@ -18,7 +18,6 @@
 		D2D866C5198E7BB3006C0565 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D866C4198E7BB3006C0565 /* Cocoa.framework */; };
 		D2D866CF198E7BB3006C0565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2D866CD198E7BB3006C0565 /* InfoPlist.strings */; };
 		D2D866D3198E7BB3006C0565 /* TMTLatexTableFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D866D2198E7BB3006C0565 /* TMTLatexTableFramework.m */; };
-		D2D866DA198E7BB3006C0565 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D866D9198E7BB3006C0565 /* XCTest.framework */; };
 		D2D866DB198E7BB3006C0565 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D866C4198E7BB3006C0565 /* Cocoa.framework */; };
 		D2D866DE198E7BB3006C0565 /* TMTLatexTableFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D866C1198E7BB3006C0565 /* TMTLatexTableFramework.framework */; };
 		D2D866E4198E7BB3006C0565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2D866E2198E7BB3006C0565 /* InfoPlist.strings */; };
@@ -39,7 +38,6 @@
 		D2D86719198E7C48006C0565 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D86718198E7C48006C0565 /* AppDelegate.m */; };
 		D2D8671C198E7C48006C0565 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D8671A198E7C48006C0565 /* MainMenu.xib */; };
 		D2D8671E198E7C48006C0565 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D8671D198E7C48006C0565 /* Images.xcassets */; };
-		D2D86724198E7C48006C0565 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D866D9198E7BB3006C0565 /* XCTest.framework */; };
 		D2D86725198E7C48006C0565 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D866C4198E7BB3006C0565 /* Cocoa.framework */; };
 		D2D8672D198E7C48006C0565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2D8672B198E7C48006C0565 /* InfoPlist.strings */; };
 		D2D8672F198E7C48006C0565 /* TMTLatexTableExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8672E198E7C48006C0565 /* TMTLatexTableExampleTests.m */; };
@@ -87,8 +85,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		006422AA66F44BA4BC0FF791 /* libPods-TMTLatexTableFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTLatexTableFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1417735F05C349A188645182 /* libPods-TMTLatexTableExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMTLatexTableExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92FDCB229B13ECD00C3D118 /* TMTBibTexTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTBibTexTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92FDCB629B13ED100C3D118 /* TMTHelperCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TMTHelperCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D260F260198EBDFA00EDAA3A /* TMTLatexTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTLatexTableRowView.h; sourceTree = "<group>"; };
@@ -106,7 +102,6 @@
 		D2D866D1198E7BB3006C0565 /* TMTLatexTableFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTLatexTableFramework.h; sourceTree = "<group>"; };
 		D2D866D2198E7BB3006C0565 /* TMTLatexTableFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableFramework.m; sourceTree = "<group>"; };
 		D2D866D8198E7BB3006C0565 /* TMTLatexTableFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMTLatexTableFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2D866D9198E7BB3006C0565 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D2D866E1198E7BB3006C0565 /* TMTLatexTableFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMTLatexTableFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		D2D866E3198E7BB3006C0565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D2D866E5198E7BB3006C0565 /* TMTLatexTableFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableFrameworkTests.m; sourceTree = "<group>"; };
@@ -135,7 +130,6 @@
 		D2D8672E198E7C48006C0565 /* TMTLatexTableExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableExampleTests.m; sourceTree = "<group>"; };
 		D2D8673D198E80B9006C0565 /* TMTLatexTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTLatexTableCellView.h; sourceTree = "<group>"; };
 		D2D8673E198E80B9006C0565 /* TMTLatexTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTLatexTableCellView.m; sourceTree = "<group>"; };
-		FD963E6B2AED41AD8E24FB72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +149,6 @@
 			files = (
 				D2D866DE198E7BB3006C0565 /* TMTLatexTableFramework.framework in Frameworks */,
 				D2D866DB198E7BB3006C0565 /* Cocoa.framework in Frameworks */,
-				D2D866DA198E7BB3006C0565 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D86725198E7C48006C0565 /* Cocoa.framework in Frameworks */,
-				D2D86724198E7C48006C0565 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,11 +200,7 @@
 				A92FDCB629B13ED100C3D118 /* TMTHelperCollection.framework */,
 				A92FDCB229B13ECD00C3D118 /* TMTBibTexTools.framework */,
 				D2D866C4198E7BB3006C0565 /* Cocoa.framework */,
-				D2D866D9198E7BB3006C0565 /* XCTest.framework */,
 				D2D866C6198E7BB3006C0565 /* Other Frameworks */,
-				FD963E6B2AED41AD8E24FB72 /* libPods.a */,
-				006422AA66F44BA4BC0FF791 /* libPods-TMTLatexTableFramework.a */,
-				1417735F05C349A188645182 /* libPods-TMTLatexTableExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

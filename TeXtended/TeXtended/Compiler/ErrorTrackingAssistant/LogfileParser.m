@@ -10,7 +10,7 @@
 #import "TrackingMessage.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 static const NSRegularExpression *ERROR_LINES_EXPRESSION;
 
@@ -31,7 +31,7 @@ static const NSDictionary *LATEX_ERROR_EXTENSIONS;
             ERROR_LINES_EXPRESSION = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionAnchorsMatchLines error:&error];
             LATEX_ERROR_EXTENSIONS = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LatexErrorExtensions" ofType:@"plist"]];
             if (error) {
-                DDLogError(@"Error while generating log file parser regex: %@", [error userInfo]);
+//                DDLogError(@"Error while generating log file parser regex: %@", [error userInfo]);
             }
         }
     }
@@ -85,7 +85,7 @@ static const NSDictionary *LATEX_ERROR_EXTENSIONS;
             NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:key options:0 error:&error];
 
             if (error) {
-                DDLogError(@"Error in regex %@: %@", key, error.userInfo);
+//                DDLogError(@"Error in regex %@: %@", key, error.userInfo);
                 continue;
             }
             NSArray *matches = [regex matchesInString:title options:0 range:NSMakeRange(0, title.length)];

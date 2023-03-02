@@ -10,7 +10,7 @@
 #import "Constants.h"
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 static NSString *TEMP_EXTENSION = @"TMTTemporaryStorage";
 
@@ -54,14 +54,14 @@ static NSString *TEMP_EXTENSION = @"TMTTemporaryStorage";
         if (exists && isDirectory) {
             return YES;
         } else if (exists && !isDirectory) {
-            DDLogWarn(@"Path exists but isn't a directory!: %@", path);
+//            DDLogWarn(@"Path exists but isn't a directory!: %@", path);
             return NO;
         } else {
             [fm createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
             if (!error) {
                 return YES;
             } else {
-                DDLogError(@"Can't create directory %@. Error: %@", path, [error userInfo]);
+//                DDLogError(@"Can't create directory %@. Error: %@", path, [error userInfo]);
                 return NO;
             }
         }
