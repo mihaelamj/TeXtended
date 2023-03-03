@@ -469,6 +469,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -829,6 +830,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableFramework/TMTLatexTableFramework-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableFramework/TMTLatexTableFramework-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -846,6 +848,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableFramework/TMTLatexTableFramework-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableFramework/TMTLatexTableFramework-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -868,6 +871,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TMTLatexTableFrameworkTests/TMTLatexTableFrameworkTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -887,6 +891,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableFramework/TMTLatexTableFramework-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableFrameworkTests/TMTLatexTableFrameworkTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -907,6 +912,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TMTLatexTableExample/TMTLatexTableExample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -922,6 +928,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableExample/TMTLatexTableExample-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableExample/TMTLatexTableExample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -944,6 +951,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TMTLatexTableExampleTests/TMTLatexTableExampleTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -963,6 +971,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMTLatexTableExample/TMTLatexTableExample-Prefix.pch";
 				INFOPLIST_FILE = "TMTLatexTableExampleTests/TMTLatexTableExampleTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.textended.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

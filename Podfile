@@ -5,7 +5,7 @@ project 'TMTHelperCollection/TMTHelperCollection.xcodeproj'
 project 'MMTabBarView/MMTabBarView/MMTabBarView.xcodeproj'
 project 'TMTLatexTableFramework/TMTLatexTableFramework.xcodeproj'
 
-platform :osx, '10.9'
+platform :osx, '10.13'
 
 target :TMTHelperCollection do
   project 'TMTHelperCollection/TMTHelperCollection.xcodeproj'
@@ -45,6 +45,7 @@ target :TeXtended do
   pod 'Sparkle'
   pod 'TMTHelperCollection', :path => './TMTHelperCollection'
   pod 'TMTBibTexTools', :path => './TMTBibTexTools'
+  pod 'MMTabBarView', :path => './MMTabBarView'
 end
 
 target 'TeXtended Tests' do
