@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency 'CocoaLumberjack'
   s.dependency 'TMTHelperCollection'
+  s.source = { :path => '.' }
 end

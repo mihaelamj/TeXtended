@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.resources  = 'TMTBibTexTools/**/*.{plist,png,xib,nib}'
   s.dependency 'CocoaLumberjack'
+  s.source = { :path => '.' }
 end

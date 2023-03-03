@@ -373,12 +373,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D866E9198E7BB3006C0565 /* Build configuration list for PBXNativeTarget "TMTLatexTableFramework" */;
 			buildPhases = (
+				B1256360A12272F2B949AEF2 /* [CP] Check Pods Manifest.lock */,
 				04FB2258B9094171AFF40724 /* Check Pods Manifest.lock */,
 				D2D866BC198E7BB3006C0565 /* Sources */,
 				D2D866BD198E7BB3006C0565 /* Frameworks */,
 				D2D866BE198E7BB3006C0565 /* Headers */,
 				D2D866BF198E7BB3006C0565 /* Resources */,
-				E5462147E2DD463EB562AA55 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,12 +411,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D86730198E7C48006C0565 /* Build configuration list for PBXNativeTarget "TMTLatexTableExample" */;
 			buildPhases = (
+				78958B96286C1A80840B1049 /* [CP] Check Pods Manifest.lock */,
 				EF5DC7092FBF40ADA8098201 /* Check Pods Manifest.lock */,
 				D2D86705198E7C48006C0565 /* Sources */,
 				D2D86706198E7C48006C0565 /* Frameworks */,
 				D2D86707198E7C48006C0565 /* Resources */,
 				956E8EBDA9A342C6908B3E41 /* Copy Pods Resources */,
-				98F15DAE01D3595B1FABD416 /* Embed Pods Frameworks */,
+				A4CEFA46F568889D24B86CBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -539,6 +540,28 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		78958B96286C1A80840B1049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMTLatexTableExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		956E8EBDA9A342C6908B3E41 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,34 +577,44 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98F15DAE01D3595B1FABD416 /* Embed Pods Frameworks */ = {
+		A4CEFA46F568889D24B86CBE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample-resources.sh",
+				"${PODS_ROOT}/../TMTLatexTableFramework/TMTLatexTableFramework/Framework/View/TMTLatexTableViewController.xib",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TMTLatexTableViewController.nib",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMTLatexTableExample/Pods-TMTLatexTableExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5462147E2DD463EB562AA55 /* Copy Pods Resources */ = {
+		B1256360A12272F2B949AEF2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMTLatexTableFramework-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTLatexTableFramework/Pods-TMTLatexTableFramework-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF5DC7092FBF40ADA8098201 /* Check Pods Manifest.lock */ = {

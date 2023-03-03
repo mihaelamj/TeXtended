@@ -383,12 +383,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D22DC1E11863784800997ADB /* Build configuration list for PBXNativeTarget "TMTHelperCollection" */;
 			buildPhases = (
+				CFB7E52FFD3E09ED5AA9FA62 /* [CP] Check Pods Manifest.lock */,
 				482BAB5E7DAD412B8185ABA8 /* Check Pods Manifest.lock */,
 				D22DC1B41863784800997ADB /* Sources */,
 				D22DC1B51863784800997ADB /* Frameworks */,
 				D22DC1B61863784800997ADB /* Headers */,
 				D22DC1B71863784800997ADB /* Resources */,
-				5594BEF7D15747D3AF019D7D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -453,19 +453,26 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5594BEF7D15747D3AF019D7D /* Copy Pods Resources */ = {
+		CFB7E52FFD3E09ED5AA9FA62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMTHelperCollection-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTHelperCollection/Pods-TMTHelperCollection-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

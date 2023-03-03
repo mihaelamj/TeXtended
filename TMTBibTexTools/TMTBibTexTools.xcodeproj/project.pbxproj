@@ -283,12 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E0715B1BDCFEB100018A78 /* Build configuration list for PBXNativeTarget "TMTBibTexTools" */;
 			buildPhases = (
+				84FCB8632F5716F8974B4847 /* [CP] Check Pods Manifest.lock */,
 				AD06C7F926217BAEAA043426 /* Check Pods Manifest.lock */,
 				D2E071451BDCFEB100018A78 /* Sources */,
 				D2E071461BDCFEB100018A78 /* Frameworks */,
 				D2E071471BDCFEB100018A78 /* Headers */,
 				D2E071481BDCFEB100018A78 /* Resources */,
-				52ABCD476D6A6C6E02984C39 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,12 +321,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E071CF1BDD005800018A78 /* Build configuration list for PBXNativeTarget "DBLPTool" */;
 			buildPhases = (
+				C20923E0E3C7C825F22289BD /* [CP] Check Pods Manifest.lock */,
 				9CCEBF42130AA71D214EB47E /* Check Pods Manifest.lock */,
 				D2E071BD1BDD005800018A78 /* Sources */,
 				D2E071BE1BDD005800018A78 /* Frameworks */,
 				D2E071BF1BDD005800018A78 /* Resources */,
-				ED0FAC4991B3A0FC705CF9AD /* Embed Pods Frameworks */,
 				A47DC06CF6FD7867D2D5C0C3 /* Copy Pods Resources */,
+				4EA3944D038C6E0770E3482A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,19 +409,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		52ABCD476D6A6C6E02984C39 /* Copy Pods Resources */ = {
+		4EA3944D038C6E0770E3482A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DBLPTool/Pods-DBLPTool-resources.sh",
+				"${PODS_ROOT}/../TMTBibTexTools/TMTBibTexTools/Connectors/DBLP/DBLPConfiguration.plist",
+				"${PODS_ROOT}/../TMTBibTexTools/TMTBibTexTools/Connectors/DBLP/DBLPSearchView.xib",
+				"${PODS_ROOT}/../TMTBibTexTools/TMTBibTexTools/DBLPToolsFramework-Info.plist",
+				"${PODS_ROOT}/../TMTBibTexTools/TMTBibTexTools/Info.plist",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DBLPConfiguration.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DBLPSearchView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DBLPToolsFramework-Info.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Info.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TMTBibTexTools/Pods-TMTBibTexTools-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBLPTool/Pods-DBLPTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84FCB8632F5716F8974B4847 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMTBibTexTools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9CCEBF42130AA71D214EB47E /* Check Pods Manifest.lock */ = {
@@ -468,19 +500,26 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		ED0FAC4991B3A0FC705CF9AD /* Embed Pods Frameworks */ = {
+		C20923E0E3C7C825F22289BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DBLPTool-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-DBLPTool/Pods-DBLPTool-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
