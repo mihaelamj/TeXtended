@@ -14,7 +14,7 @@
 #import <TMTHelperCollection/TMTLog.h>
 #import "LineNumberView.h"
 
-LOGGING_DEFAULT
+//LOGGING_DEFAULT
 
 @interface BibDocument ()
 
@@ -104,8 +104,8 @@ LOGGING_DEFAULT
         NSDictionary *errorDict = nil;
         [script executeAndReturnError:&errorDict];
         if (errorDict) {
-            DDLogError(@"Can't execute apple script: %@", errorDict);
-            DDLogInfo(@"%@", source);
+//            DDLogError(@"Can't execute apple script: %@", errorDict);
+//            DDLogInfo(@"%@", source);
         }
     }
 

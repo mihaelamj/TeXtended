@@ -14,7 +14,7 @@
 
 #import <TMTHelperCollection/TMTLog.h>
 
-LOGGING_DEFAULT_DYNAMIC
+//LOGGING_DEFAULT_DYNAMIC
 
 @interface CompileTask ()
 - (ConsoleData *)consoleData:(DocumentModel *)model forMode:(CompileMode)mode;
@@ -43,7 +43,7 @@ LOGGING_DEFAULT_DYNAMIC
 }
 
 + (void)initialize {
-    LOGGING_LOAD
+//    LOGGING_LOAD
 }
 
 - (id)initWithDocument:(DocumentModel *)model forMode:(CompileMode)mode withDelegate:(id <CompileTaskDelegate>)delegate {
@@ -119,7 +119,7 @@ LOGGING_DEFAULT_DYNAMIC
     NSPipe *outPipe = [NSPipe pipe];
     NSPipe *inPipe = [NSPipe pipe];
     if (!outPipe || !inPipe) {
-        DDLogError(@"One of the pipes could not be initialized. Aborting compile for model %@", _model);
+//        DDLogError(@"One of the pipes could not be initialized. Aborting compile for model %@", _model);
         return;
     }
 
@@ -154,14 +154,14 @@ LOGGING_DEFAULT_DYNAMIC
 }
 
 - (void)failCompilation:(NSException *)exception {
-    DDLogError(@"Cant'start compiler task %@. Exception: %@ (%@)", exception, exception.reason, exception.name);
-    DDLogDebug(@"%@", [NSThread callStackSymbols]);
+//    DDLogError(@"Cant'start compiler task %@. Exception: %@ (%@)", exception, exception.reason, exception.name);
+//    DDLogDebug(@"%@", [NSThread callStackSymbols]);
     [self updateDataOnEnd];
     [_delegate compilationFailed:self];
 }
 
 - (void)finishedCompilationTask {
-    TMT_TRACE
+//    TMT_TRACE
     [self updateDataOnEnd];
     [[NSNotificationCenter defaultCenter] postNotificationName:TMTCompilerDidEndCompiling object:_model];
     [_delegate compilationFinished:self];
